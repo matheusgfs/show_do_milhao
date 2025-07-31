@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+  background-color: #1b263b;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f4d35e;
+}
+
+/* Botões de categoria e jogo */
+button {
+  background-color: #f4d35e;
+  color: #0d1b2a;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px 8px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #eece41;
+}
+
+/* Seção de pergunta */
+#pergunta {
+  font-size: 1.3em;
+  margin: 20px 0 10px;
+}
+
+/* Alternativas (botões) */
+#alternativas button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Pontuação e progresso */
+#pontuacao, #progresso {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #a9d6e5;
+}
+
+/* Feedback após resposta */
+#feedback {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+/* Ajudas */
+#ajudas {
+  margin-top: 20px;
+}
+
+#ajudas button {
+  background-color: #60a5fa;
+  color: white;
+}
+
+#ajudas button:hover {
+  background-color: #3b82f6;
+}

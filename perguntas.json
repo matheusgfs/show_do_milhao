@@ -1,0 +1,42 @@
+{
+  "futebol": [
+    {
+      "pergunta": "Quem venceu a Copa do Mundo de 1994?",
+      "alternativas": ["Brasil", "Itália", "França", "Alemanha"],
+      "correta": "Brasil",
+      "dica": "O país venceu nos pênaltis contra a Itália."
+    },
+    {
+      "pergunta": "Quantos títulos mundiais o Brasil tem?",
+      "alternativas": ["3", "4", "5", "6"],
+      "correta": "5",
+      "dica": "O último foi em 2002."
+    },
+    {
+      "pergunta": "Qual jogador é conhecido como 'Fenômeno'?",
+      "alternativas": ["Romário", "Zico", "Ronaldo", "Pelé"],
+      "correta": "Ronaldo",
+      "dica": "Ele jogou no Real Madrid e no Corinthians."
+    }
+  ],
+  "matematica": [
+    {
+      "pergunta": "Quanto é 9 x 7?",
+      "alternativas": ["63", "56", "72", "69"],
+      "correta": "63",
+      "dica": "É maior que 60 e menor que 70."
+    },
+    {
+      "pergunta": "Qual a raiz quadrada de 81?",
+      "alternativas": ["7", "8", "9", "10"],
+      "correta": "9",
+      "dica": "9 x 9 = ?"
+    },
+    {
+      "pergunta": "Qual número é múltiplo de 3?",
+      "alternativas": ["17", "20", "21", "25"],
+      "correta": "21",
+      "dica": "É um número ímpar entre 20 e 22."
+    }
+  ]
+}

@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Show do Milhão</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <div id="tela-inicial" class="container">
+    <h1>🎉 Show do Milhão 🎉</h1>
+    <p>Escolha uma categoria para começar:</p>
+    <div class="categorias">
+      <button onclick="iniciarJogo('futebol')">⚽ Futebol</button>
+      <button onclick="iniciarJogo('matematica')">🧠 Matemática e Raciocínio Lógico</button>
+    </div>
+  </div>
+
+  <div id="tela-jogo" class="container" style="display: none;">
+    <div id="pontuacao">Pontuação: R$ 0</div>
+    <div id="progresso">Pergunta 1 de 10</div>
+    <div id="pergunta"></div>
+    <div id="alternativas"></div>
+    <div id="feedback"></div>
+
+    <div id="ajudas">
+      <button id="botaoPular" onclick="usarAjuda('pular')">🔁 Pular (1 uso)</button>
+      <button id="botaoEliminar" onclick="usarAjuda('eliminar')">❌ Eliminar (1 uso)</button>
+      <button id="botaoDica" onclick="usarAjuda('dica')">💡 Dica (1 uso)</button>
+    </div>
+
+    <div id="dica" style="margin-top: 10px;"></div>
+
+    <div id="controle-decidir" style="display: none;">
+      <p>Deseja continuar ou encerrar com o prêmio atual?</p>
+      <button onclick="continuarJogo()">Continuar</button>
+      <button onclick="encerrarComPremio()">Encerrar com prêmio</button>
+    </div>
+
+    <button onclick="reiniciarJogo()">🔄 Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
