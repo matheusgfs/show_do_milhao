@@ -1,42 +1,116 @@
 {
-  "futebol": [
-    {
-      "pergunta": "Quem venceu a Copa do Mundo de 1994?",
-      "alternativas": ["Brasil", "Itália", "França", "Alemanha"],
-      "correta": "Brasil",
-      "dica": "O país venceu nos pênaltis contra a Itália."
-    },
-    {
-      "pergunta": "Quantos títulos mundiais o Brasil tem?",
-      "alternativas": ["3", "4", "5", "6"],
-      "correta": "5",
-      "dica": "O último foi em 2002."
-    },
-    {
-      "pergunta": "Qual jogador é conhecido como 'Fenômeno'?",
-      "alternativas": ["Romário", "Zico", "Ronaldo", "Pelé"],
-      "correta": "Ronaldo",
-      "dica": "Ele jogou no Real Madrid e no Corinthians."
-    }
-  ],
+  "futebol": {
+    "selecao": [
+      { "pergunta": "Quantos títulos mundiais tem a Seleção Brasileira?", "alternativas": ["3", "4", "5", "6"], "correta": "5", "dica": "O último foi em 2002" },
+      { "pergunta": "Quem foi o técnico na Copa de 2002?", "alternativas": ["Parreira", "Felipão", "Zagallo", "Dunga"], "correta": "Felipão", "dica": "Também é chamado de Scolari" },
+      { "pergunta": "Qual jogador fez os dois gols na final de 2002?", "alternativas": ["Ronaldo", "Ronaldinho", "Rivaldo", "Kaká"], "correta": "Ronaldo", "dica": "Conhecido como 'Fenômeno'" },
+      { "pergunta": "Quem perdeu o pênalti contra a França em 1986?", "alternativas": ["Zico", "Sócrates", "Careca", "Taffarel"], "correta": "Zico", "dica": "Era o camisa 10" },
+      { "pergunta": "Qual goleiro defendeu dois pênaltis contra a Holanda em 1998?", "alternativas": ["Taffarel", "Dida", "Marcos", "Ceni"], "correta": "Taffarel", "dica": "Clássico grito: 'Tá pegando tudo!'" },
+      { "pergunta": "Em que ano o Brasil perdeu para a Alemanha por 7x1?", "alternativas": ["2010", "2014", "2018", "2022"], "correta": "2014", "dica": "Foi no Mineirão" },
+      { "pergunta": "Qual foi o adversário da final de 1994?", "alternativas": ["Itália", "Alemanha", "França", "Argentina"], "correta": "Itália", "dica": "Decidida nos pênaltis" },
+      { "pergunta": "Quem foi o artilheiro da Copa de 2002?", "alternativas": ["Rivaldo", "Ronaldinho", "Ronaldo", "Adriano"], "correta": "Ronaldo", "dica": "Marcou 8 gols" },
+      { "pergunta": "Quem é o maior artilheiro da seleção?", "alternativas": ["Pelé", "Ronaldo", "Neymar", "Romário"], "correta": "Pelé", "dica": "Fez mais de 70 gols oficiais" },
+      { "pergunta": "Quantas vezes o Brasil sediou uma Copa?", "alternativas": ["1", "2", "3", "4"], "correta": "2", "dica": "1950 e 2014" },
+      { "pergunta": "Qual país eliminou o Brasil em 2018?", "alternativas": ["Bélgica", "França", "Croácia", "Alemanha"], "correta": "Bélgica", "dica": "Jogo foi 2x1" }
+    ],
+    "atletico": [
+      { "pergunta": "Qual é o apelido do Atlético Mineiro?", "alternativas": ["Galo", "Raposa", "Tigre", "Pantera"], "correta": "Galo", "dica": "Símbolo é um galo" },
+      { "pergunta": "Quem foi o artilheiro do Galo na Libertadores de 2013?", "alternativas": ["Ronaldinho", "Jô", "Tardelli", "Bernard"], "correta": "Jô", "dica": "Fez 7 gols" },
+      { "pergunta": "Qual estádio é a casa do Atlético?", "alternativas": ["Mineirão", "Independência", "Arena MRV", "Maracanã"], "correta": "Arena MRV", "dica": "Estádio mais recente" },
+      { "pergunta": "Quem era o técnico em 2021?", "alternativas": ["Cuca", "Luxemburgo", "Sampaoli", "Abel Braga"], "correta": "Cuca", "dica": "Também treinou o time em 2013" },
+      { "pergunta": "Qual jogador usava a camisa 10 em 2013?", "alternativas": ["Bernard", "Ronaldinho", "Guilherme", "Luan"], "correta": "Ronaldinho", "dica": "Bruxo" },
+      { "pergunta": "Quantas vezes o Galo foi campeão brasileiro?", "alternativas": ["1", "2", "3", "4"], "correta": "2", "dica": "1971 e 2021" },
+      { "pergunta": "Quem era o goleiro em 2013?", "alternativas": ["Victor", "Everson", "Giovanni", "Rafael"], "correta": "Victor", "dica": "Defesa milagrosa contra o Tijuana" },
+      { "pergunta": "Qual cor não faz parte do uniforme do Galo?", "alternativas": ["Preto", "Branco", "Cinza", "Vermelho"], "correta": "Vermelho", "dica": "É do rival" },
+      { "pergunta": "Quantos títulos da Copa do Brasil o Galo tem até 2023?", "alternativas": ["1", "2", "3", "4"], "correta": "2", "dica": "Venceu em 2014 e 2021" },
+      { "pergunta": "Quem era o presidente em 2021?", "alternativas": ["Sérgio Coelho", "Kalil", "Rui Costa", "Rodrigo Caetano"], "correta": "Sérgio Coelho", "dica": "Nome de ex-político mineiro" },
+      { "pergunta": "Quem fez o gol do título do Brasileirão de 2021?", "alternativas": ["Hulk", "Keno", "Nacho", "Zaracho"], "correta": "Keno", "dica": "Fez dois gols na virada" }
+    ],
+"cruzeiro": [
+  { "pergunta": "Qual o apelido do Cruzeiro?", "alternativas": ["Raposa", "Galo", "Leão", "Tigre"], "correta": "Raposa", "dica": "Animal astuto" },
+  { "pergunta": "Qual o maior artilheiro da história do Cruzeiro?", "alternativas": ["Tostão", "Dirceu Lopes", "Alex", "Fábio Júnior"], "correta": "Tostão", "dica": "Jogou na Copa de 1970" },
+  { "pergunta": "Qual estádio é a casa do Cruzeiro?", "alternativas": ["Mineirão", "Independência", "Arena da Baixada", "Maracanã"], "correta": "Mineirão", "dica": "Localizado em BH" },
+  { "pergunta": "Quantas vezes o Cruzeiro foi campeão da Copa do Brasil até 2023?", "alternativas": ["5", "6", "4", "3"], "correta": "6", "dica": "É o maior campeão do torneio" },
+  { "pergunta": "Quem foi o técnico campeão da Tríplice Coroa?", "alternativas": ["Luxemburgo", "Levir Culpi", "Adilson Batista", "Cuca"], "correta": "Luxemburgo", "dica": "Ex-técnico da Seleção" },
+  { "pergunta": "Quem era o camisa 10 em 2003?", "alternativas": ["Alex", "Ricardinho", "Deivid", "Fábio"], "correta": "Alex", "dica": "Meia habilidoso e líder" },
+  { "pergunta": "Qual foi o último título brasileiro do Cruzeiro?", "alternativas": ["2013", "2014", "2015", "2016"], "correta": "2014", "dica": "Foram bicampeões seguidos" },
+  { "pergunta": "Qual goleiro mais atuou pelo clube?", "alternativas": ["Fábio", "Dida", "Rafael", "Gomes"], "correta": "Fábio", "dica": "Mais de 950 jogos" },
+  { "pergunta": "Qual rival histórico do Cruzeiro?", "alternativas": ["Atlético", "América", "Flamengo", "Grêmio"], "correta": "Atlético", "dica": "Clássico mineiro" },
+  { "pergunta": "Qual a cor do uniforme principal do Cruzeiro?", "alternativas": ["Azul", "Preto", "Branco", "Vermelho"], "correta": "Azul", "dica": "Azul celeste" },
+  { "pergunta": "Qual título internacional o clube venceu em 1997?", "alternativas": ["Libertadores", "Sul-Americana", "Recopa", "Mercosul"], "correta": "Libertadores", "dica": "Maior torneio da América" }
+],
+
+"flamengo": [
+  { "pergunta": "Qual o mascote do Flamengo?", "alternativas": ["Urubu", "Águia", "Galo", "Raposa"], "correta": "Urubu", "dica": "Animal negro e símbolo de superação" },
+  { "pergunta": "Quem foi o técnico campeão da Libertadores em 2019?", "alternativas": ["Abel Braga", "Jorge Jesus", "Dorival Júnior", "Tite"], "correta": "Jorge Jesus", "dica": "Técnico português" },
+  { "pergunta": "Quem marcou dois gols na final de 2019?", "alternativas": ["Gabigol", "Bruno Henrique", "Arrascaeta", "Everton Ribeiro"], "correta": "Gabigol", "dica": "Camisa 9" },
+  { "pergunta": "Contra quem o Flamengo venceu em 1981 para conquistar a Libertadores?", "alternativas": ["Cobreloa", "River", "Peñarol", "Boca"], "correta": "Cobreloa", "dica": "Clube chileno" },
+  { "pergunta": "Quem é o maior artilheiro da história do Flamengo?", "alternativas": ["Zico", "Romário", "Gabigol", "Adílio"], "correta": "Zico", "dica": "Galinho de Quintino" },
+  { "pergunta": "Quantos títulos brasileiros o Flamengo tem até 2023?", "alternativas": ["6", "7", "8", "9"], "correta": "8", "dica": "Empatado com Palmeiras" },
+  { "pergunta": "Qual jogador é conhecido como 'BH27'?", "alternativas": ["Bruno Henrique", "Gabigol", "Pedro", "Everton Cebolinha"], "correta": "Bruno Henrique", "dica": "Velocista do time" },
+  { "pergunta": "Quem era o camisa 10 em 2019?", "alternativas": ["Diego Ribas", "Arrascaeta", "Everton Ribeiro", "Vitinho"], "correta": "Diego Ribas", "dica": "Ex-Santos e Seleção" },
+  { "pergunta": "Qual o estádio original do clube?", "alternativas": ["Maracanã", "Gávea", "Engenhão", "São Januário"], "correta": "Gávea", "dica": "Fica na sede social" },
+  { "pergunta": "Quem marcou o gol do título da Supercopa de 2021?", "alternativas": ["Gabigol", "Pedro", "Arrascaeta", "Vitinho"], "correta": "Vitinho", "dica": "Entrou no segundo tempo" },
+  { "pergunta": "Contra quem o Flamengo perdeu a final de 2022 da Libertadores?", "alternativas": ["Palmeiras", "Athletico-PR", "River", "Grêmio"], "correta": "Palmeiras", "dica": "Gol na prorrogação" }
+]
+
+
+  },
+  "filmes": {
+    "senhor_dos_aneis": [
+      { "pergunta": "Quem é o portador do Um Anel?", "alternativas": ["Frodo", "Aragorn", "Gandalf", "Boromir"], "correta": "Frodo", "dica": "Hobbit do Condado" },
+      { "pergunta": "Quem forjou o Um Anel?", "alternativas": ["Sauron", "Saruman", "Elrond", "Gollum"], "correta": "Sauron", "dica": "Senhor do escuro" },
+      { "pergunta": "Qual é o nome do mago branco?", "alternativas": ["Gandalf", "Saruman", "Radagast", "Elrond"], "correta": "Saruman", "dica": "Interpretado por Christopher Lee" },
+      { "pergunta": "Quem é o Rei de Gondor?", "alternativas": ["Boromir", "Aragorn", "Theoden", "Faramir"], "correta": "Aragorn", "dica": "Também chamado de Elessar" },
+      { "pergunta": "Quem destruiu o Um Anel?", "alternativas": ["Frodo", "Gollum", "Sam", "Sauron"], "correta": "Gollum", "dica": "Acidentalmente, na Montanha da Perdição" },
+      { "pergunta": "Qual é o nome da espada de Aragorn?", "alternativas": ["Andúril", "Glamdring", "Sting", "Narsil"], "correta": "Andúril", "dica": "Forjada a partir de Narsil" },
+      { "pergunta": "Quem é o pai de Legolas?", "alternativas": ["Thranduil", "Elrond", "Galadriel", "Arathorn"], "correta": "Thranduil", "dica": "Rei da Floresta das Trevas" },
+      { "pergunta": "Quem é Sam?", "alternativas": ["Hobbit", "Elfo", "Anão", "Humano"], "correta": "Hobbit", "dica": "Jardineiro fiel" },
+      { "pergunta": "O que é Mordor?", "alternativas": ["Montanha", "País", "Cidade", "Castelo"], "correta": "País", "dica": "Terra governada por Sauron" },
+      { "pergunta": "Quem matou o Rei Bruxo?", "alternativas": ["Aragorn", "Éowyn", "Gandalf", "Merry"], "correta": "Éowyn", "dica": "Ninguém pode matá-lo... mas ela não é homem" },
+      { "pergunta": "Quem é o autor dos livros?", "alternativas": ["J.K. Rowling", "J.R.R. Tolkien", "George R.R. Martin", "C.S. Lewis"], "correta": "J.R.R. Tolkien", "dica": "Professor de Oxford" }
+    ],
+
+    "round6": [
+  { "pergunta": "Qual o país de origem da série Round 6?", "alternativas": ["Coreia do Sul", "Japão", "China", "Tailândia"], "correta": "Coreia do Sul", "dica": "Mesmo país de BTS" },
+  { "pergunta": "Quantas pessoas participam do jogo inicial?", "alternativas": ["456", "500", "400", "300"], "correta": "456", "dica": "Número do protagonista" },
+  { "pergunta": "Qual é o nome do jogo da boneca?", "alternativas": ["Batata quente", "Batatinha Frita 1, 2, 3", "Esconde-esconde", "Corrida maluca"], "correta": "Batatinha Frita 1, 2, 3", "dica": "Traduzido para o português" },
+  { "pergunta": "O que acontece com os eliminados?", "alternativas": ["São mortos", "Voltam ao jogo", "São punidos", "Ficam presos"], "correta": "São mortos", "dica": "Série é bem violenta" },
+  { "pergunta": "Qual a motivação dos jogadores?", "alternativas": ["Dinheiro", "Vingança", "Fama", "Liberdade"], "correta": "Dinheiro", "dica": "Valor do prêmio" },
+  { "pergunta": "Qual número do protagonista?", "alternativas": ["456", "101", "001", "218"], "correta": "456", "dica": "Último número da lista" },
+  { "pergunta": "Quem é o jogador 001?", "alternativas": ["Idoso", "Vilão", "Protagonista", "Filho do criador"], "correta": "Idoso", "dica": "Revela algo importante no fim" },
+  { "pergunta": "Que tipo de máscara os soldados usam?", "alternativas": ["Com formas", "Negras", "Transparentes", "Brancas"], "correta": "Com formas", "dica": "Círculo, quadrado e triângulo" },
+  { "pergunta": "Qual o prêmio em dinheiro?", "alternativas": ["45,6 bilhões de won", "100 bilhões", "1 milhão", "10 bilhões"], "correta": "45,6 bilhões de won", "dica": "Igual ao número de jogadores" },
+  { "pergunta": "O jogo é transmitido para?", "alternativas": ["Ricos", "Público geral", "TV", "Aliens"], "correta": "Ricos", "dica": "A elite acompanha" },
+  { "pergunta": "Qual o jogo final?", "alternativas": ["Round 6", "Jogo da velha", "Esconde-esconde", "Xadrez"], "correta": "Round 6", "dica": "Jogo coreano infantil" }
+],
+
+"marvel": [
+  { "pergunta": "Quem é o Homem de Ferro?", "alternativas": ["Tony Stark", "Steve Rogers", "Bruce Wayne", "Peter Parker"], "correta": "Tony Stark", "dica": "Bilionário" },
+  { "pergunta": "Qual herói usa um escudo?", "alternativas": ["Capitão América", "Thor", "Hulk", "Homem-Aranha"], "correta": "Capitão América", "dica": "Steve Rogers" },
+  { "pergunta": "Quem é o vilão em Vingadores: Guerra Infinita?", "alternativas": ["Ultron", "Loki", "Thanos", "Galactus"], "correta": "Thanos", "dica": "Roxo e com manopla" },
+  { "pergunta": "Quem levanta o martelo de Thor em Ultimato?", "alternativas": ["Homem de Ferro", "Hulk", "Capitão América", "Pantera Negra"], "correta": "Capitão América", "dica": "Cena épica" },
+  { "pergunta": "Qual o nome real do Pantera Negra?", "alternativas": ["T'Challa", "M'Baku", "N'Jadaka", "Okoye"], "correta": "T'Challa", "dica": "Rei de Wakanda" },
+  { "pergunta": "Quem é o Deus da Trapaça?", "alternativas": ["Loki", "Thor", "Hela", "Odin"], "correta": "Loki", "dica": "Irmão adotivo de Thor" },
+  { "pergunta": "Qual herói é interpretado por Tom Holland?", "alternativas": ["Homem-Aranha", "Homem de Ferro", "Pantera Negra", "Ant-Man"], "correta": "Homem-Aranha", "dica": "Amigo da vizinhança" },
+  { "pergunta": "Quem é o cientista que vira o Hulk?", "alternativas": ["Bruce Banner", "Tony Stark", "Reed Richards", "Stephen Strange"], "correta": "Bruce Banner", "dica": "Fúria verde" },
+  { "pergunta": "Quantas Joias do Infinito existem?", "alternativas": ["4", "5", "6", "7"], "correta": "6", "dica": "Cada uma tem uma cor" },
+  { "pergunta": "Qual personagem é um guaxinim falante?", "alternativas": ["Rocket", "Groot", "Drax", "Yondu"], "correta": "Rocket", "dica": "Guardiões da Galáxia" },
+  { "pergunta": "Quem é o Mago Supremo?", "alternativas": ["Dr. Estranho", "Loki", "Wanda", "Agatha"], "correta": "Dr. Estranho", "dica": "Usa o Olho de Agamotto" }
+]
+
+  },
   "matematica": [
-    {
-      "pergunta": "Quanto é 9 x 7?",
-      "alternativas": ["63", "56", "72", "69"],
-      "correta": "63",
-      "dica": "É maior que 60 e menor que 70."
-    },
-    {
-      "pergunta": "Qual a raiz quadrada de 81?",
-      "alternativas": ["7", "8", "9", "10"],
-      "correta": "9",
-      "dica": "9 x 9 = ?"
-    },
-    {
-      "pergunta": "Qual número é múltiplo de 3?",
-      "alternativas": ["17", "20", "21", "25"],
-      "correta": "21",
-      "dica": "É um número ímpar entre 20 e 22."
-    }
+  { "pergunta": "Quanto é 8 x 7?", "alternativas": ["54", "56", "64", "58"], "correta": "56", "dica": "É mais de 50 e menos de 60" },
+  { "pergunta": "Raiz quadrada de 81?", "alternativas": ["8", "9", "7", "6"], "correta": "9", "dica": "9 x 9 = ?" },
+  { "pergunta": "Quanto é 120 dividido por 10?", "alternativas": ["10", "11", "12", "13"], "correta": "12", "dica": "Multiplica por 10 e chega em 120" },
+  { "pergunta": "Qual é o próximo número da sequência: 2, 4, 8, 16...?", "alternativas": ["32", "24", "18", "20"], "correta": "32", "dica": "Multiplica por 2" },
+  { "pergunta": "Qual é o resultado de (3 + 2) × 4?", "alternativas": ["20", "14", "18", "22"], "correta": "20", "dica": "Siga a ordem das operações" },
+  { "pergunta": "Quanto é a metade de 0,5?", "alternativas": ["0,25", "0,50", "1", "0,75"], "correta": "0,25", "dica": "Metade de meio" },
+  { "pergunta": "Se João tem 3 pares de meias, quantas meias ele tem?", "alternativas": ["6", "3", "9", "12"], "correta": "6", "dica": "Cada par tem duas" },
+  { "pergunta": "Se um carro faz 10 km por litro, quantos litros precisa para 150 km?", "alternativas": ["15", "10", "20", "12"], "correta": "15", "dica": "Divida distância por rendimento" },
+  { "pergunta": "Quantos lados tem um hexágono?", "alternativas": ["6", "5", "8", "4"], "correta": "6", "dica": "Hexa = ?" },
+  { "pergunta": "Qual número falta? 1, 1, 2, 3, 5, ___, 13", "alternativas": ["7", "8", "9", "10"], "correta": "8", "dica": "Sequência de Fibonacci" },
+  { "pergunta": "Se 5x = 20, quanto vale x?", "alternativas": ["4", "5", "10", "15"], "correta": "4", "dica": "Divida ambos os lados por 5" }
   ]
 }

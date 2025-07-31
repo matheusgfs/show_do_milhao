@@ -7,15 +7,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Tela Inicial -->
   <div id="tela-inicial" class="container">
     <h1>🎉 Show do Milhão 🎉</h1>
-    <p>Escolha uma categoria para começar:</p>
-    <div class="categorias">
-      <button onclick="iniciarJogo('futebol')">⚽ Futebol</button>
-      <button onclick="iniciarJogo('matematica')">🧠 Matemática e Raciocínio Lógico</button>
+    <p>Escolha uma categoria para jogar:</p>
+
+    <!-- Seleção de categoria -->
+    <div id="categorias">
+      <button onclick="selecionarCategoria('futebol')">⚽ Futebol</button>
+      <button onclick="selecionarCategoria('filmes')">🎬 Filmes e Séries</button>
+      <button onclick="iniciarJogo('matematica')">🧠 Matemática e Lógica</button>
+    </div>
+
+    <!-- Subcategorias -->
+    <div id="subcategorias" style="display: none;">
+      <p>Escolha uma subcategoria:</p>
+      <div id="botoes-subcategorias"></div>
+      <button onclick="voltarParaCategorias()">⬅️ Voltar</button>
     </div>
   </div>
 
+  <!-- Tela do jogo -->
   <div id="tela-jogo" class="container" style="display: none;">
     <div id="pontuacao">Pontuação: R$ 0</div>
     <div id="progresso">Pergunta 1 de 10</div>
@@ -23,16 +36,19 @@
     <div id="alternativas"></div>
     <div id="feedback"></div>
 
+    <!-- Ajudas -->
     <div id="ajudas">
-      <button id="botaoPular" onclick="usarAjuda('pular')">🔁 Pular (1 uso)</button>
-      <button id="botaoEliminar" onclick="usarAjuda('eliminar')">❌ Eliminar (1 uso)</button>
-      <button id="botaoDica" onclick="usarAjuda('dica')">💡 Dica (1 uso)</button>
+      <button id="botaoPular" onclick="usarAjuda('pular')">🔁 Pular</button>
+      <button id="botaoEliminar" onclick="usarAjuda('eliminar')">❌ Eliminar</button>
+      <button id="botaoDica" onclick="usarAjuda('dica')">💡 Dica</button>
     </div>
 
-    <div id="dica" style="margin-top: 10px;"></div>
+    <!-- Dica exibida -->
+    <div id="dica-container"></div>
 
+    <!-- Decisão após acerto -->
     <div id="controle-decidir" style="display: none;">
-      <p>Deseja continuar ou encerrar com o prêmio atual?</p>
+      <p>Você acertou! Deseja continuar ou encerrar com o prêmio atual?</p>
       <button onclick="continuarJogo()">Continuar</button>
       <button onclick="encerrarComPremio()">Encerrar com prêmio</button>
     </div>

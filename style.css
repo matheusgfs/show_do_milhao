@@ -90,3 +90,32 @@ button:hover {
 #ajudas button:hover {
   background-color: #3b82f6;
 }
+
+/* Botões com letra da alternativa */
+#alternativas button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  font-size: 1em;
+  padding: 12px 16px;
+  background-color: #f4d35e;
+  color: #0d1b2a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#alternativas button:hover {
+  background-color: #eece41;
+}
+
+/* Letra da alternativa em destaque */
+#alternativas button::before {
+  content: attr(data-letra);
+  font-weight: bold;
+  color: #3b82f6;
+  margin-right: 10px;
+}
+
