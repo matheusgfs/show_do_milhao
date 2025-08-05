@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Show do Milhão</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,18 +13,22 @@
     <h1>🎉 Show do Milhão 🎉</h1>
     <p>Escolha uma categoria para jogar:</p>
 
+    <!-- Campo opcional para nome do jogador -->
+    <label for="input-nome">Digite seu nome (opcional):</label>
+    <input type="text" id="input-nome" placeholder="Seu nome aqui" />
+
     <!-- Seleção de categoria -->
-    <div id="categorias">
+    <div id="categorias" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
       <button onclick="selecionarCategoria('futebol')">⚽ Futebol</button>
       <button onclick="selecionarCategoria('filmes')">🎬 Filmes e Séries</button>
       <button onclick="iniciarJogo('matematica')">🧠 Matemática e Lógica</button>
     </div>
 
     <!-- Subcategorias -->
-    <div id="subcategorias" style="display: none;">
+    <div id="subcategorias" style="display: none; margin-top: 25px;">
       <p>Escolha uma subcategoria:</p>
-      <div id="botoes-subcategorias"></div>
-      <button onclick="voltarParaCategorias()">⬅️ Voltar</button>
+      <div id="botoes-subcategorias" style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;"></div>
+      <button onclick="voltarParaCategorias()" style="margin-top: 20px;">⬅️ Voltar</button>
     </div>
   </div>
 
@@ -32,28 +36,45 @@
   <div id="tela-jogo" class="container" style="display: none;">
     <div id="pontuacao">Pontuação: R$ 0</div>
     <div id="progresso">Pergunta 1 de 10</div>
+    <div id="valor-pergunta" style="font-weight: bold; color: #f4d35e; margin-bottom: 10px;">Valor: R$ 0</div>
+    <div id="acertos-faltando">Acertos: 0 | Faltam: 0</div>
     <div id="pergunta"></div>
     <div id="alternativas"></div>
+
+    <!-- Botão Confirmar Resposta - oculto inicialmente -->
+    <button id="btn-confirmar" style="display:none; margin-top: 10px;" onclick="confirmarResposta()">Confirmar Resposta</button>
+
     <div id="feedback"></div>
+    <div id="explicacao" style="margin-top: 10px; font-style: italic; color: #ddd;"></div>
 
     <!-- Ajudas -->
-    <div id="ajudas">
-      <button id="botaoPular" onclick="usarAjuda('pular')">🔁 Pular</button>
-      <button id="botaoEliminar" onclick="usarAjuda('eliminar')">❌ Eliminar</button>
-      <button id="botaoDica" onclick="usarAjuda('dica')">💡 Dica</button>
+    <div id="ajudas" style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+      <button id="botaoPular" onclick="usarAjuda('pular')">🔁 Pular (1)</button>
+      <button id="botaoEliminar" onclick="usarAjuda('eliminar')">❌ Eliminar (1)</button>
+      <button id="botaoDica" onclick="usarAjuda('dica')">💡 Dica (1)</button>
     </div>
 
     <!-- Dica exibida -->
-    <div id="dica-container"></div>
+    <div id="dica-container" style="margin-top: 20px;"></div>
 
     <!-- Decisão após acerto -->
-    <div id="controle-decidir" style="display: none;">
-      <p>Você acertou! Deseja continuar ou encerrar com o prêmio atual?</p>
+    <div id="controle-decidir" style="display: none; margin-top: 30px; background: rgba(244, 211, 94, 0.15); border-radius: 15px; padding: 20px; box-shadow: 0 0 12px #f4d35e;">
+      <p style="font-weight: 600; font-size: 1.2em; margin-bottom: 18px; color: #f4d35e; text-shadow: 0 0 6px #f4d35e;">
+        Você acertou! Deseja continuar ou encerrar com o prêmio atual?
+      </p>
       <button onclick="continuarJogo()">Continuar</button>
       <button onclick="encerrarComPremio()">Encerrar com prêmio</button>
     </div>
 
-    <button onclick="reiniciarJogo()">🔄 Reiniciar</button>
+    <!-- Reiniciar -->
+    <button onclick="reiniciarJogo()" style="margin-top: 30px;">🔄 Reiniciar</button>
+  </div>
+
+  <!-- Tela final -->
+  <div id="tela-final" class="container" style="display: none;">
+    <h2>🏆 Fim do Jogo 🏆</h2>
+    <p id="mensagem-final"></p>
+    <button onclick="reiniciarJogo()">🔄 Jogar Novamente</button>
   </div>
 
   <script src="script.js"></script>

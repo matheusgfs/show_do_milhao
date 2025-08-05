@@ -6,116 +6,410 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Body centralizado com gradiente suave e animação */
 body {
-  background-color: #0d1b2a;
+  background: linear-gradient(135deg, #0d1b2a 0%, #162a4a 100%);
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 12px; /* de 20px para 12px */
+  transition: background-color 0.5s ease;
 }
 
-/* Container centralizado */
+/* Container centralizado com sombra mais sofisticada */
 .container {
-  background-color: #1b263b;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  max-width: 600px;
+  background-color: rgba(27, 38, 59, 0.95);
+  padding: 25px 30px; /* de 35px 40px para 25px 30px */
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  max-width: 650px;
   width: 100%;
   text-align: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Título */
+/* Título com sombra e fonte mais impactante */
 h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 2.8em;
+  margin-bottom: 16px; /* de 25px para 16px */
   color: #f4d35e;
+  text-shadow: 2px 2px 8px rgba(244, 211, 94, 0.8);
+  user-select: none;
 }
 
-/* Botões de categoria e jogo */
+/* Container dos botões de categoria */
+#categorias {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* de 20px para 15px */
+  margin-top: 10px; /* de 15px para 10px */
+  flex-wrap: wrap;
+}
+
+/* Botões de categoria */
+#categorias button {
+  flex: 1 1 150px;
+  max-width: 200px;
+  background-color: #f4d35e;
+  color: #0d1b2a;
+  border: none;
+  padding: 12px 20px; /* de 14px 24px para 12px 20px */
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(244, 211, 94, 0.6);
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.15s ease;
+  user-select: none;
+}
+
+#categorias button:hover {
+  background-color: #eece41;
+  box-shadow: 0 8px 20px rgba(238, 206, 65, 0.8);
+  transform: translateY(-3px);
+}
+
+/* Botões padrão (fora do container categorias) */
 button {
   background-color: #f4d35e;
   color: #0d1b2a;
   border: none;
-  padding: 12px 20px;
-  margin: 10px 8px;
-  border-radius: 8px;
-  font-size: 1em;
+  padding: 12px 24px; /* de 14px 28px para 12px 24px */
+  margin: 8px 8px; /* de 12px 10px para 8px 8px */
+  border-radius: 12px;
+  font-size: 1.1em;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(244, 211, 94, 0.6);
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.15s ease;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Hover dos botões com glow e leve elevação */
 button:hover {
   background-color: #eece41;
+  box-shadow: 0 8px 20px rgba(238, 206, 65, 0.8);
+  transform: translateY(-3px);
+}
+
+/* Efeito de "pressionar" botão */
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 8px rgba(238, 206, 65, 0.6);
 }
 
 /* Seção de pergunta */
 #pergunta {
-  font-size: 1.3em;
-  margin: 20px 0 10px;
+  font-size: 1.5em;
+  margin: 16px 0 10px; /* de 25px 0 15px para 16px 0 10px */
+  font-weight: 600;
+  color: #ffe066;
+  text-shadow: 1px 1px 5px rgba(255, 224, 102, 0.8);
 }
 
 /* Alternativas (botões) */
 #alternativas button {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-}
-
-/* Pontuação e progresso */
-#pontuacao, #progresso {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #a9d6e5;
-}
-
-/* Feedback após resposta */
-#feedback {
-  margin-top: 15px;
-  font-size: 1.2em;
-}
-
-/* Ajudas */
-#ajudas {
-  margin-top: 20px;
-}
-
-#ajudas button {
-  background-color: #60a5fa;
-  color: white;
-}
-
-#ajudas button:hover {
-  background-color: #3b82f6;
-}
-
-/* Botões com letra da alternativa */
-#alternativas button {
+  width: 100%;         /* ocupa toda a largura do container */
+  box-sizing: border-box; /* inclui padding e borda na largura */
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 12px;
-  font-size: 1em;
-  padding: 12px 16px;
+  gap: 14px; /* de 16px para 14px */
+  font-size: 1.1em;
+  padding: 12px 18px; /* de 14px 20px para 12px 18px */
   background-color: #f4d35e;
   color: #0d1b2a;
-  border: none;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(244, 211, 94, 0.5);
+  margin: 8px 0; /* de 10px 0 para 8px 0 */
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.15s ease;
   cursor: pointer;
-  transition: background-color 0.3s;
+  user-select: none;
+  border: none;
+  position: relative;
+  overflow: hidden;
 }
 
-#alternativas button:hover {
+/* Hover nas alternativas */
+#alternativas button:hover:not(:disabled) {
   background-color: #eece41;
+  box-shadow: 0 8px 20px rgba(238, 206, 65, 0.7);
+  transform: translateY(-3px);
 }
 
 /* Letra da alternativa em destaque */
 #alternativas button::before {
   content: attr(data-letra);
-  font-weight: bold;
+  font-weight: 700;
   color: #3b82f6;
-  margin-right: 10px;
+  margin-right: 14px; /* de 16px para 14px */
+  font-size: 1.3em;
+  user-select: none;
+  width: 30px;
+  text-align: center;
 }
 
+/* Alternativas desabilitadas ficam esmaecidas */
+#alternativas button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  box-shadow: none;
+}
+
+/* Pontuação, progresso e acertos */
+#pontuacao, #progresso, #acertos-faltando {
+  margin-top: 10px; /* de 15px para 10px */
+  font-weight: 700;
+  color: #a9d6e5;
+  user-select: none;
+  text-shadow: 0 0 6px rgba(169, 214, 229, 0.8);
+}
+
+/* Feedback após resposta */
+#feedback {
+  margin-top: 16px; /* de 25px para 16px */
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700;
+  user-select: none;
+  min-height: 1.8em;
+}
+
+/* Explicação */
+#explicacao {
+  margin-top: 10px; /* de 15px para 10px */
+  font-style: italic;
+  color: #eee;
+  opacity: 0.85;
+  user-select: none;
+  min-height: 2em;
+  transition: opacity 0.4s ease;
+}
+
+/* Ajudas */
+#ajudas {
+  margin-top: 20px; /* de 30px para 20px */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* de 20px para 15px */
+}
+
+/* Botões de ajuda */
+#ajudas button {
+  background-color: #60a5fa;
+  color: white;
+  padding: 10px 18px; /* de 12px 22px para 10px 18px */
+  font-weight: 700;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(96, 165, 250, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+  position: relative;
+  user-select: none;
+}
+
+/* Hover ajuda */
+#ajudas button:hover:not(:disabled) {
+  background-color: #3b82f6;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.8);
+  transform: translateY(-3px);
+}
+
+/* Botões ajuda desabilitados */
+#ajudas button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Dica exibida */
+#dica-container {
+  margin-top: 12px; /* de 20px para 12px */
+  font-style: italic;
+  color: #ffd966;
+  text-shadow: 0 0 5px #ffd966;
+  min-height: 1.5em;
+  user-select: none;
+}
+
+/* Decisão após acerto */
+#controle-decidir {
+  margin-top: 20px; /* de 30px para 20px */
+  background: rgba(244, 211, 94, 0.15);
+  border-radius: 15px;
+  padding: 15px 20px; /* de 20px para 15px 20px */
+  box-shadow: 0 0 12px #f4d35e;
+  user-select: none;
+}
+
+#controle-decidir p {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 12px; /* de 18px para 12px */
+  color: #f4d35e;
+  text-shadow: 0 0 6px #f4d35e;
+}
+
+/* Reiniciar */
+button[onclick="reiniciarJogo()"] {
+  margin-top: 20px; /* de 30px para 20px */
+  background-color: #888;
+  color: #eee;
+  box-shadow: 0 4px 10px rgba(136,136,136,0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[onclick="reiniciarJogo()"]:hover {
+  background-color: #666;
+  box-shadow: 0 6px 15px rgba(102,102,102,0.7);
+  transform: translateY(-2px);
+}
+
+/* Temas */
+
+/* Atlético Mineiro */
+body.tema-atletico-mg {
+  background: linear-gradient(135deg, #000000, #1c1c1c);
+  color: #fff;
+}
+body.tema-atletico-mg .container {
+  background-color: #121212;
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 25px #ffd700;
+}
+body.tema-atletico-mg button {
+  background-color: #ffd700;
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0 6px 15px #ffd700;
+}
+body.tema-atletico-mg button:hover {
+  background-color: #fff159;
+  box-shadow: 0 8px 25px #fff159;
+  color: #000;
+}
+
+/* Cruzeiro */
+body.tema-cruzeiro {
+  background: linear-gradient(135deg, #002080, #003399);
+  color: #ffffff;
+}
+body.tema-cruzeiro .container {
+  background-color: #001a66;
+  border: 2px solid #99bbff;
+  box-shadow: 0 0 20px #99bbff;
+}
+body.tema-cruzeiro button {
+  background-color: #99bbff;
+  color: #001a66;
+  font-weight: 700;
+  box-shadow: 0 6px 15px #99bbff;
+}
+body.tema-cruzeiro button:hover {
+  background-color: #cce0ff;
+  box-shadow: 0 8px 25px #cce0ff;
+  color: #001a66;
+}
+
+/* Flamengo */
+body.tema-flamengo {
+  background: linear-gradient(135deg, #1a0000, #330000);
+  color: #ff3333;
+}
+body.tema-flamengo .container {
+  background-color: #220000;
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 20px #ff0000;
+}
+body.tema-flamengo button {
+  background-color: #ff0000;
+  color: #220000;
+  font-weight: 700;
+  box-shadow: 0 6px 15px #ff0000;
+}
+body.tema-flamengo button:hover {
+  background-color: #cc0000;
+  box-shadow: 0 8px 25px #cc0000;
+  color: #fff;
+}
+
+/* Seleção Brasileira */
+body.tema-selecao {
+  background: linear-gradient(135deg, #009b3a, #005522);
+  color: #ffdf00;
+}
+body.tema-selecao .container {
+  background-color: #005522;
+  border: 2px solid #ffdf00;
+  box-shadow: 0 0 20px #ffdf00;
+}
+body.tema-selecao button {
+  background-color: #ffdf00;
+  color: #005522;
+  font-weight: 700;
+  box-shadow: 0 6px 15px #ffdf00;
+}
+body.tema-selecao button:hover {
+  background-color: #ffe066;
+  box-shadow: 0 8px 25px #ffe066;
+  color: #004411;
+}
+
+/* Senhor dos Anéis */
+body.tema-senhor-dos-aneis {
+  background: linear-gradient(135deg, #3e2f1c, #2e230f);
+  color: #d4af37;
+}
+body.tema-senhor-dos-aneis .container {
+  background-color: #2e230f;
+  border: 2px solid #d4af37;
+  box-shadow: 0 0 20px #d4af37;
+}
+body.tema-senhor-dos-aneis button {
+  background-color: #d4af37;
+  color: #3e2f1c;
+  font-weight: 700;
+  box-shadow: 0 6px 15px #d4af37;
+}
+body.tema-senhor-dos-aneis button:hover {
+  background-color: #f0d969;
+  box-shadow: 0 8px 25px #f0d969;
+  color: #3e2f1c;
+}
+
+/* Round6 */
+body.tema-round6 {
+  background: linear-gradient(135deg, #180d0c, #097c6b);
+  color: #e43254;
+}
+body.tema-round6 .container {
+  background-color: #180d0c;
+  border: 2px solid #e43254;
+  box-shadow: 0 0 20px #e43254;
+}
+body.tema-round6 button {
+  background-color: #e43254;
+  color: #f4f4f4;
+  font-weight: 700;
+  box-shadow: 0 6px 15px #e43254;
+}
+body.tema-round6 button:hover {
+  background-color: #ff607a;
+  box-shadow: 0 8px 25px #ff607a;
+  color: #f4f4f4;
+}
